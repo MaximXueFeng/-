@@ -25,12 +25,12 @@ print "Coefficient c: "
 c = gets.chomp.to_f
 
 d = (b**2) - (4 * a * c)
+e = Math.sqrt(d)
 
-x1 = (-b + Math.sqrt(d)) / 2 * a
-x2 = (-b - Math.sqrt(d)) / 2 * a
+x1 = (-b + e) / 2 * a
+x2 = (-b - e) / 2 * a
 
-if
-  d > 0
+if d > 0
   puts "Discriminant: #{d}, roots: #{x1}, #{x2}"
 elsif
   d == 0
