@@ -19,8 +19,7 @@ b = gets.chomp.to_i
 print "Сторона c: "
 c = gets.chomp.to_i
 
-if
-  c > a && b
+if c > a && b
   c**2 == a**2 + b**2
   puts "Треугольник прямоугольный."
 elsif
